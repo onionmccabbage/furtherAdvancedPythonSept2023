@@ -35,8 +35,3 @@ if __name__ == '__main__':
     creature = input('which creature? ') # we ought to validate...
     # use ourfactory to return the creartue capability
     cf.make_sound(creature)
-
-
-
-
-
