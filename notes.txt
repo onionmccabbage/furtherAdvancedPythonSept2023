@@ -14,8 +14,8 @@ Monday
 - welcome
 - we will be installing additional packages as needed
 - design patterns (and anti-patterns)
-- decorator pattern (using @)
-- factory and facade patterns
+> decorator pattern (using @)
+> factory and facade patterns
 - command pattern
 - proxy pattern
 - after lunch review exercise
