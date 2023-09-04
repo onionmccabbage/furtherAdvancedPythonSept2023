@@ -35,10 +35,33 @@ class Artisan():
 
 class Manager():
     '''manage the other roles'''
+    def __init__(self):
+        print('Manager says I can arrange the team')
+    def arrange(self):
+        # The facade will provide instances of all the subsystems/microservices needed
+        self.coder      = Coder()
+        self.tester     = Tester()
+        self.technician = Technician()
+        self.artisan    = Artisan()
+        # put them to work (we could pass arguments)
+        self.coder.book_time()
+        self.tester.testing()
+        self.technician.doStuff()
+        self.artisan.make_prototype()
 
-# the above 'manager' facade might be invoked by a client
+ # the above 'manager' facade might be invoked by a client
 class Client():
     '''needs to have stuff done'''
+    def __init__(self):
+        print('We need a project team')
+    def askManager(self):
+        print('lets talk to the manager')
+        self.manager = Manager()
+        self.manager.arrange()
+    def __del__(self): # every class in Python will run __del__ when it finishes
+        print('all done')
 
 if __name__ == '__main__':
     '''a facade can make ugly stuff easier to look at'''
+    customer = Client()
+    customer.askManager()
