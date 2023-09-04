@@ -18,7 +18,7 @@ Monday
 > factory and facade patterns
 > command pattern
 > after lunch review exercise
-- proxy pattern
+> proxy pattern
 - observables and subscribers
 - we will need Jupyter Notebooks later in the week
 
