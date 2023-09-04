@@ -2,9 +2,12 @@
 from news_pub import NewsPublisher
 # here are the subscribers (also known as listeners or observers)
 from email_sub import EmailSubscriber
+from print_sub import PrintSubscriber
+from media_sub import MediaSubscriber
+from other_sub import OtherSubscriber
 
 # careful - a one-member tuple MUST have a trailing comma
-subs_t = (EmailSubscriber, )
+subs_t = (EmailSubscriber, PrintSubscriber, MediaSubscriber, OtherSubscriber )
 
 def main():
     '''iterate over all subscribers, notifying of fresh news'''
