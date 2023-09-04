@@ -8,6 +8,8 @@ Toby Dussek
 3:00  tea
 4:30  end
 
+repo https://github.com/onionmccabbage/furtherAdvancedPythonSept2023
+
 Monday
 - welcome
 - we will be installing additional packages as needed
