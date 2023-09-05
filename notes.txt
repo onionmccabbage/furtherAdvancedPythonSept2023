@@ -33,6 +33,7 @@ Tuesday
       https://wiki.python.org/moin/GlobalInterpreterLock
 > overview: thread functions and thread classes
 - thread locks/rlocks/semaphores
+- semaphore quantity (also print)
 - after lunch review exercise
 - thread decorator
 - legacy examples

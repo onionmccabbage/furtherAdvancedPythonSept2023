@@ -25,13 +25,13 @@ class TicketSeller(threading.Thread): # we inherit fro mthe Thread class
                 self.ticketsSold += 1
                 ticketsAvailable -= 1
             self.__sem.release() # release the semaphore
+            print(f'Ticket seller {self.getName()} sold {self.ticketsSold}')
     def randomDelay(self):
         time.sleep(random.randint(0,4)/16) # 0, 0.25, 0.5 or 0.75 seconds
 
-
 def main():
     ''' provide a semaphore then a number of ticket seller instances'''
-    sem = threading.Semaphore()
+    sem = threading.Semaphore(4) # we can control the concurrency here
     sellers = []
     for i in range(0, 16):
         seller = TicketSeller(sem) # pass the global semaphore to our instance
