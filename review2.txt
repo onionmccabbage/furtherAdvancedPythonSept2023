@@ -1,4 +1,4 @@
-Python Review Exercise 2
+Python Review Exercise 2 1.5 hours (until 3:40 including 15min tea break about 3:00)
 ========================
 For this project, use modules and imports to separate your code structures
 In a new Python module, declare a 'WeatherGetter' class which inherits 
