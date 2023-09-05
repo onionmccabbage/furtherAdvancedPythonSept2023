@@ -1,3 +1,5 @@
+# see https://rxpy.readthedocs.io/en/latest/index.html
+    #    https://rxmarbles.com/
 # from reactivex import create
 
 # def push_five_strings(observer, scheduler):
