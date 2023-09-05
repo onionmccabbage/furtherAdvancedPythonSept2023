@@ -23,8 +23,8 @@ Monday
 - we will need Jupyter Notebooks later in the week
 
 Tuesday
-- where we got to (summary of design patterns)
-- state pattern
+> where we got to (summary of design patterns)
+> state pattern
 - RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/
 - concurrency and parallel code
