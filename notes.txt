@@ -25,10 +25,13 @@ Monday
 Tuesday
 > where we got to (summary of design patterns)
 > state pattern
-- RxPY https://rxpy.readthedocs.io/en/latest/index.html
+> RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/
 - concurrency and parallel code
-- overview: thread functions and thread classes
+> the GIL...
+  see https://realpython.com/python-gil/
+      https://wiki.python.org/moin/GlobalInterpreterLock
+> overview: thread functions and thread classes
 - thread locks/rlocks/semaphores
 - after lunch review exercise
 - thread decorator

@@ -15,14 +15,17 @@ def someFn(n):
         print(n)
 
 class SomeClass(Thread):
-    def __init__(self, n):
-        Thread.__init__(self) # call the __init__ of the parent class
-        self.n = n
+    def __init__(self, n ):
+        # super().__init__(self, )
+        Thread.__init__(self) # call the __init__ of the parent class including Thread defaults
+        # self.n = n
     # the Thread class has a 'run' method which we can override
     def run(self):
         for i in range(0, 50):
             time.sleep(random.random()*0.1 ) # sleep for up to a tenth of a second
             print(self.n)
+
+
 if __name__ == '__main__':
     t1 = Thread(target=someFn, args=('thread 1',)) # Arguments are provided in a tuple
     t2 = Thread(target=someFn, args=('thread 2',)) # Arguments are provided in a tuple
