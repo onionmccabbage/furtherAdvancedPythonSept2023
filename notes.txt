@@ -32,11 +32,12 @@ Tuesday
   see https://realpython.com/python-gil/
       https://wiki.python.org/moin/GlobalInterpreterLock
 > overview: thread functions and thread classes
-- thread locks/rlocks/semaphores
-- semaphore quantity (also print)
-- after lunch review exercise
-- thread decorator
+> thread locks/rlocks/semaphores
+> semaphore quantity (also print)
+> after lunch review exercise
+> daemon threads
 - legacy examples
+- thread decorator
 
 Wednesday
 - final look at @ decorator to make classes and methods thread safe (using Lock)

@@ -7,7 +7,7 @@ import time
 class TempGetter(Thread):
     def __init__(self, city):
         super().__init__()
-        self.city = city
+        self.city = city # we ought to validate the city
     # @profile
     def run(self):
         url_template = (
