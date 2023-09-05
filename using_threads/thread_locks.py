@@ -9,24 +9,28 @@ lock = threading.Lock()
 def workerA():
     '''this function will access the global counter'''
     global counter
-    # we will use a lock later
+    lock.acquire()
     try:
         while counter <20:
             counter += 1
             print(f'worker A increments counter to {counter}')
     except Exception as e:
         print(e)
+    finally:
+        lock.release()
 
 def workerB():
     '''this function will access the global counter'''
     global counter
-    # we will use a lock later
+    lock.acquire()
     try:
         while counter >-20:
             counter -= 1
             print(f'worker B decrements counter to {counter}')
     except Exception as e:
         print(e)
+    finally:
+        lock.release()
 
 if __name__ == '__main__':
     t1 = threading.Thread(target=workerA)
