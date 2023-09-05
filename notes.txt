@@ -11,15 +11,15 @@ Toby Dussek
 repo https://github.com/onionmccabbage/furtherAdvancedPythonSept2023
 
 Monday
-- welcome
-- we will be installing additional packages as needed
-- design patterns (and anti-patterns)
+> welcome
+> we will be installing additional packages as needed
+> design patterns (and anti-patterns)
 > decorator pattern (using @)
 > factory and facade patterns
 > command pattern
 > after lunch review exercise
 > proxy pattern
-- observables and subscribers
+> observables and subscribers
 - we will need Jupyter Notebooks later in the week
 
 Tuesday
@@ -32,6 +32,7 @@ Tuesday
 - thread locks/rlocks/semaphores
 - after lunch review exercise
 - thread decorator
+- legacy examples
 
 Wednesday
 - final look at @ decorator to make classes and methods thread safe (using Lock)

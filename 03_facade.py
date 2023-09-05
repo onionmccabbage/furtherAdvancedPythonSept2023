@@ -50,6 +50,7 @@ class Manager():
         self.artisan.make_prototype()
 
  # the above 'manager' facade might be invoked by a client
+
 class Client():
     '''needs to have stuff done'''
     def __init__(self):
