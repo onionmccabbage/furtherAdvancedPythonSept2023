@@ -1,4 +1,4 @@
-Review 3 - Profiling and Timing 
+Review 3 - Profiling and Timing 1 hour (until 3:35 including 15 min break)
 ===============================
 For this exercise, use any of the previous review exercises, or my solutions to those exercises,
 or write new code if you prefer. 
