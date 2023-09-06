@@ -43,6 +43,7 @@ Wednesday
 > custom thread decorator
   final look at @ decorator to make classes and methods thread safe (using Lock)
 - multiprocessing
+  AWS, data-access
 - performance and timing
 - profiling with @profile and cProfile
 - after lunch review exercise
