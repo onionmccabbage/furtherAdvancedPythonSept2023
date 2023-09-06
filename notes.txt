@@ -42,8 +42,9 @@ Wednesday
 > access to recordings
 > custom thread decorator
   final look at @ decorator to make classes and methods thread safe (using Lock)
-- multiprocessing
+> multiprocessing
   AWS, data-access
+  we can also use gpu  - often use 'cuda' or similar
 - performance and timing
 - profiling with @profile and cProfile
 - after lunch review exercise

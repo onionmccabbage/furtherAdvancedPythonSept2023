@@ -2,6 +2,11 @@ from time import time
 from timeit import default_timer # this is a more accurate tool
 from functools import reduce
 
+# always aim for performant code
+# use timeit as more accurate timer
+# take plenty of samples then average
+
+
 def fib(n):
     '''fibonacci is a sequence of mathematics to endlessly return a pattern of numbers
     1, 2, 3, 5, 8, 13, 21 '''
@@ -24,7 +29,7 @@ def fib2(n):
 if __name__ == '__main__':
     # n=32 # about 1.5 sec on my laptop
     # n=34 # about 10 sec on my laptop
-    n=10000
+    n=10000 # takes ~1000 seconds on my laptop for fib2()
     # start = time()
     start2 = default_timer()
     for _ in range(2, n+1):
