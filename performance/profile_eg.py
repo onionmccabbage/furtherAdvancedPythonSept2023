@@ -14,7 +14,7 @@ def someFn():
     my_deq.popleft() # remove the left-most member
     print(f'Deque: {my_deq}')
     # we can consume a lot of system memory
-    for i in range(0, 1024**3):
+    for i in range(0, 1024**2):
         my_deq.append( str(i) )
 
 
