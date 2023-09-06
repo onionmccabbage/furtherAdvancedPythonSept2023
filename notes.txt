@@ -45,10 +45,10 @@ Wednesday
 > multiprocessing
   AWS, data-access
   we can also use gpu  - often use 'cuda' or similar
-- performance and timing
-- profiling with @profile and cProfile
-- after lunch review exercise
-- why use a thread or a process
+> performance and timing
+> profiling with @profile and cProfile
+> after lunch review exercise
+> why use a thread or a process
 - generators
 - prepare for Thursday ...
 

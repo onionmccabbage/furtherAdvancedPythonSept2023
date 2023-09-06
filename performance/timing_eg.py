@@ -36,6 +36,14 @@ def fib2(n): # very good performance
     # we must return
     return sequence[-1] # the last member
 
+def fib3(n):
+    ''' thanks Orla'''
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b
+    return a
+
+
 if __name__ == '__main__':
     n=32 # about 1.5 sec on my laptop
     # n=34 # about 10 sec on my laptop
