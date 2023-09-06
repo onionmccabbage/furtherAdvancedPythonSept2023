@@ -36,17 +36,18 @@ Tuesday
 > semaphore quantity (also print)
 > after lunch review exercise
 > daemon threads
-- legacy examples
-- thread decorator
+> legacy examples
 
 Wednesday
-- final look at @ decorator to make classes and methods thread safe (using Lock)
+> access to recordings
+- custom thread decorator
+  final look at @ decorator to make classes and methods thread safe (using Lock)
 - multiprocessing
 - performance and timing
 - profiling with @profile and cProfile
 - after lunch review exercise
 - why use a thread or a process
-- generators, async await and coroutines
+- generators
 - prepare for Thursday ...
 
 Thursday
