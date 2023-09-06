@@ -40,7 +40,7 @@ Tuesday
 
 Wednesday
 > access to recordings
-- custom thread decorator
+> custom thread decorator
   final look at @ decorator to make classes and methods thread safe (using Lock)
 - multiprocessing
 - performance and timing
