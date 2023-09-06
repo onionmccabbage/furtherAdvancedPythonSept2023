@@ -1,4 +1,4 @@
-# from memory_profiler import profile
+from memory_profiler import profile
 from threading import Thread
 import json
 import requests

@@ -1,4 +1,4 @@
-# from memory_profiler import profile
+from memory_profiler import profile
 from threading import Thread
 import json
 import requests
@@ -8,7 +8,7 @@ class TempGetter(Thread):
     def __init__(self, city):
         super().__init__()
         self.city = city # we ought to validate the city
-    # @profile
+    @profile
     def run(self):
         url_template = (
             'http://api.openweathermap.org/data/2.5/'
