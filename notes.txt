@@ -71,6 +71,7 @@ Thursday
    then you will also need to pip install numpy, pandas etc.
 - numpy and data structures: the arange and array 
 - pandas: series and data-frame
+  NaN, creating stuctures, analysis (stats)
 - data vizualisation with matplotlib
 - data cleansing and preparation
 - descriptive statistics
