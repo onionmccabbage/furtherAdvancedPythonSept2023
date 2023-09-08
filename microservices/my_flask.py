@@ -3,6 +3,7 @@
 # if you need a public-facing server then use Flask with Apache etc. (for security)
 # Flask is a lightweight service, it leaves security to others
 from flask import Flask
+from flask import render_template
 
 # to make a Flask web server...
 app = Flask(__name__) # this is conventional
@@ -41,6 +42,14 @@ def menu():
     link3 = '<a href="/greet">Greet</a>'
     link4 = '<a href="/map">Map</a>'
     return f'{link1} | {link2} | {link3} | {link4}'
+
+@app.route('/lunch')
+@app.route('/lunch/<desert>') # REST
+def lunch(desert=None):
+    # all Flask templates exist in the 'templates' package
+    return render_template('lunch.html', desert=desert) # pass any URL arguments into the template
+
+
 
 if __name__ == '__main__':
     # debug=True will live reload on changes
