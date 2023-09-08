@@ -12,7 +12,6 @@ repo https://github.com/onionmccabbage/furtherAdvancedPythonSept2023
 course website (for recordings)
       https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Beyond_A_Python/site/index.html
 
-
 Monday
 > welcome
 > we will be installing additional packages as needed
