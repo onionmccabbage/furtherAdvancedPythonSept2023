@@ -91,7 +91,8 @@ Friday
   or else debug=True in the app declaration
   see https://flask.palletsprojects.com/en/2.3.x/
 > after lunch review exercise
-
+- cython
+  https://cython.org/
 - end of course feedback
   easy retro https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/c4747d9c-0a34-4ce6-b301-072f9616d487
   also internal feedback
