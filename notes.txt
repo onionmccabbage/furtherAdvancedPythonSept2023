@@ -5,7 +5,7 @@ Toby Dussek
 9:30  start
 11:00 coffee
 12:30 lunch
-3:00  tea
+3:00  tea break until 3:15
 4:30  end
 
 repo https://github.com/onionmccabbage/furtherAdvancedPythonSept2023

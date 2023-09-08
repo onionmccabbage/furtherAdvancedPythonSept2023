@@ -5,6 +5,7 @@
 from flask import Flask
 from flask import render_template
 from weather import getWeather
+import requests
 
 # to make a Flask web server...
 app = Flask(__name__) # this is conventional
@@ -57,6 +58,15 @@ def weather(city='Athlone'):
     # call the weather service
     w = getWeather(city)
     return w.encode() # all data aover HTTP must be encoded
+
+@app.route('/swapi')
+def swapi():
+    # CAREFUL unusually, swapi does NOT support www.
+    r = requests.get('https://swapi.dev/api/people/1')
+    response_dict = r.json()
+    name = response_dict['name']
+    return name
+
 
 if __name__ == '__main__':
     # debug=True will live reload on changes
