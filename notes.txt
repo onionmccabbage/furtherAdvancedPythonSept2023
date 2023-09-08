@@ -9,6 +9,9 @@ Toby Dussek
 4:30  end
 
 repo https://github.com/onionmccabbage/furtherAdvancedPythonSept2023
+course website (for recordings)
+      https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Beyond_A_Python/site/index.html
+
 
 Monday
 > welcome
@@ -20,14 +23,14 @@ Monday
 > after lunch review exercise
 > proxy pattern
 > observables and subscribers
-- we will need Jupyter Notebooks later in the week
+> we will need Jupyter Notebooks later in the week
 
 Tuesday
 > where we got to (summary of design patterns)
 > state pattern
 > RxPY https://rxpy.readthedocs.io/en/latest/index.html
        https://rxmarbles.com/
-- concurrency and parallel code
+> concurrency and parallel code
 > the GIL...
   see https://realpython.com/python-gil/
       https://wiki.python.org/moin/GlobalInterpreterLock
@@ -80,6 +83,7 @@ Thursday
 - careful - exporting a notebook does not add 'print' statements
 
 Friday
+- quick look at machine learning
 - review of microservices
 - Flask: running as dev or prod server (performance and security)
   to run as a debug server: flask --app my_flask.py --debug run
@@ -88,7 +92,8 @@ Friday
 - after lunch review exercise
 - end of course feedback
   easy retro https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/c4747d9c-0a34-4ce6-b301-072f9616d487
-  also internal feedback...
+  also internal feedback
+  https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1502707&OID=508290&Title=Python%20-%20Beyond%20Advanced&Owner=Sachin%20Srivastava%20B
 
 where to go next
    https://www.geeksforgeeks.org/python-design-patterns/
