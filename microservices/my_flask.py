@@ -4,6 +4,7 @@
 # Flask is a lightweight service, it leaves security to others
 from flask import Flask
 from flask import render_template
+from weather import getWeather
 
 # to make a Flask web server...
 app = Flask(__name__) # this is conventional
@@ -49,7 +50,13 @@ def lunch(desert=None):
     # all Flask templates exist in the 'templates' package
     return render_template('lunch.html', desert=desert) # pass any URL arguments into the template
 
-
+# we can use our Weather service to return a report
+@app.route('/weather') # good idea to rovide a default route
+@app.route('/weather/<city>')
+def weather(city='Athlone'):
+    # call the weather service
+    w = getWeather(city)
+    return w.encode() # all data aover HTTP must be encoded
 
 if __name__ == '__main__':
     # debug=True will live reload on changes
