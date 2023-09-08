@@ -1,7 +1,8 @@
 import sys
 import socket
+from threading import Thread
 
-def myClient():
+def myClient(city='Galway'):
     '''make requests to the microservice'''
     cli = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     setup_t = ('localhost', 9876) # IP and port
@@ -11,7 +12,7 @@ def myClient():
         # concaternate the system arument variables
         msg = ', '.join(sys.argv[1:])
     else:
-        msg = 'default'
+        msg = city
     # remember to encode all communication
     cli.send(msg.encode())
     # handle any response from the server
@@ -21,6 +22,11 @@ def myClient():
     cli.close()
 
 if __name__ == '__main__':
-    print( sys.argv[1:] )
-    myClient()
+    cities = ['London', 'Canberra', 'Maine', 'Hull', 'Belfast']
+    for city in cities:
+        t = Thread(target=myClient, args=(city,))
+        t.start()
+        t.join()
+    # print( sys.argv[1:] )
+    # myClient()
 

@@ -24,6 +24,7 @@ def myServer():
         if buf == b'quit':
             break # stop this microservice 
         else:
+            # this service is a proxy for the weather API
             url_template = f'http://api.openweathermap.org/data/2.5/weather?q={buf_str}&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1'
             print(f'server is trying {url_template}')
             response = requests.get(url_template)
