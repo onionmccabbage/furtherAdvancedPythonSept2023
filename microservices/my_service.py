@@ -11,7 +11,8 @@ def myServer():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     setup_t = ('localhost', 9876) # IP and port
     server.bind(setup_t) # tell the server which IP address and port it should use
-    server.listen() # begin listening for requests from clients
+    # we can set the number of concurrent clients to be handled
+    server.listen(4) # begin listening for requests from clients
     print(f'Server is listening on {setup_t[0]}:{setup_t[1]} ')
     # a run loop (the server will run continously)
     while True:
