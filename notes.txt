@@ -11,6 +11,7 @@ Toby Dussek
 repo https://github.com/onionmccabbage/furtherAdvancedPythonSept2023
 course website (for recordings)
       https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Beyond_A_Python/site/index.html
+      username neueda   password c0nygre
 
 Monday
 > welcome
